@@ -35,7 +35,7 @@ body {
 
 .container::before, .container::after {
     content: '❤️';
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
     animation: float 3s infinite;
 }
@@ -47,8 +47,8 @@ body {
 }
 
 .container::after {
-    top: 98%;
-    right: -10px;
+    top: 94%;
+    right: 9px;
     transform: translateY(-50%);
     animation-delay: 1.5s;
 }
@@ -94,22 +94,7 @@ p {
     max-height: 90%; /* Ajuste para la altura máxima */
     overflow-y: auto; /* Habilitar desplazamiento si el contenido es demasiado alto */
     width: 80%; /* Ajuste para el ancho máximo */
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    background-color: #e60073;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #c40060;
+    cursor: pointer; /* Indicar que es clicable */
 }
 
 /* Media Query para ajustar el tamaño del modal y el diseño en dispositivos móviles */
@@ -133,10 +118,5 @@ button:hover {
         width: 90%; /* Ajuste para el ancho máximo en móvil */
         top: 40%; /* Ajuste para subir el cuadro */
         transform: translate(-50%, -40%); /* Ajuste para centrar verticalmente el cuadro */
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 16px;
     }
 }

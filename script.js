@@ -13,6 +13,5 @@ function playMusic() {
     const audio = document.getElementById('backgroundMusic');
     audio.play().catch(error => {
         console.log('Autoplay was prevented:', error);
-        document.getElementById('playButton').style.display = 'block';
     });
 }

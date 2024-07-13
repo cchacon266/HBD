@@ -6,11 +6,11 @@
     <title>Carta de cumpleaños</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body onload="playMusic()">
+<body>
 
     <div class="carousel-container">
         <img class="carousel-image" src="imagen/imagen1.jpeg" alt="Imagen 1">
-        <div class="carousel-text-container">
+        <div class="carousel-text-container" onclick="playMusic()">
             <div class="container">
                 <h1>Amorcito,</h1>
                 <p><b>
@@ -33,7 +33,6 @@
             </div>
         </div>
     </div>
-
 
     <audio id="backgroundMusic" src="tu_cancion.mp3" loop></audio>
     <script src="script.js"></script>
