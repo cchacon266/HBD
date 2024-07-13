@@ -114,9 +114,9 @@ p {
 
     .carousel-text-container {
         padding: 10px;
-        max-height: 80%; /* Ajuste para la altura máxima en móvil */
+        max-height: 85%; /* Ajuste para la altura máxima en móvil */
         width: 90%; /* Ajuste para el ancho máximo en móvil */
-        top: 40%; /* Ajuste para subir el cuadro */
+        top: 39%; /* Ajuste para subir el cuadro */
         transform: translate(-50%, -40%); /* Ajuste para centrar verticalmente el cuadro */
     }
 }
