@@ -28,8 +28,9 @@ body {
     padding: 30px;
     border-radius: 10px;
     position: relative;
-    max-width: 800px; /* Ancho máximo */
+    max-width: 90%; /* Ancho máximo */
     z-index: 1;
+    margin: auto; /* Centramos el contenedor */
 }
 
 .container::before, .container::after {
@@ -61,6 +62,7 @@ p {
     color: #000;
     font-size: 18px; /* Tamaño de fuente ajustado */
     margin: 10px 0;
+    padding: 0 10px; /* Agregamos padding para evitar que el texto toque los bordes */
 }
 
 /* Carousel Styles */
