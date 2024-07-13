@@ -9,6 +9,7 @@
         transform: translateY(0);
     }
 }
+
 body {
     margin: 0;
     font-family: 'Comic Sans MS', sans-serif;
@@ -20,166 +21,90 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
+
 .container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
     padding: 30px;
     border-radius: 10px;
     position: relative;
-    max-width: 100%;
+    max-width: 800px; /* Ancho máximo */
     z-index: 1;
 }
+
 .container::before, .container::after {
     content: '❤️';
     font-size: 50px;
     position: absolute;
     animation: float 3s infinite;
 }
+
 .container::before {
     top: -30px;
     left: -30px;
 }
+
 .container::after {
     bottom: -30px;
     right: -30px;
     animation-delay: 1.5s;
 }
+
 h1 {
     color: #e60073;
+    font-size: 36px; /* Tamaño de fuente ajustado */
 }
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.yes {
-    background-color: #ff4081;
-    color: white;
-}
-.no {
-    background-color: #b0bec5;
-    color: white;
-}
-.yes:hover {
-    background-color: #f50057;
-}
-.no:hover {
-    background-color: #78909c;
-}
-.modal {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 3px;
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-}
-.modal-content {
-    background-color: #fefefe;
-    padding: 10px;
-    border: 1px solid #888;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    color: #000; /* Color de texto del modal */
-    max-width: 80%; /* Ajusta el ancho del modal */
-   
-}
-.close {
-    color: #aaa;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.close:hover {
-    color: #fff;
-}
-.modal-content p {
-    font-size: 25px; /* Tamaño de fuente ajustado */
-    color: #e60073;
+
+p {
+    color: #000;
+    font-size: 18px; /* Tamaño de fuente ajustado */
+    margin: 10px 0;
 }
 
 /* Carousel Styles */
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    font-size: 25px; /* Tamaño de fuente personalizado */
 }
+
 .carousel-image {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .carousel-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Asegura que esté por encima de la imagen */
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 0%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+    padding: 20px;
     border-radius: 10px;
 }
-.carousel-text {
-    color: #000;
-    font-size: 90px; /* Tamaño de fuente ajustado */
-    text-align: center;
-}
 
-/* Media Query para ajustar el tamaño del modal y el diseño de los botones en dispositivos móviles */
-@media (max-width: 100px) {
-    .modal {
-        padding: 10px;
-    }
-    .modal-content {
-        padding: 10px;
-        max-width: 90%; /* Ajusta el ancho del modal */
-    }
-    .close {
-        font-size: 20px;
-    }
-    .modal-content p {
-        font-size: 14px; /* Tamaño de fuente ajustado */
-    }
+/* Media Query para ajustar el tamaño del modal y el diseño en dispositivos móviles */
+@media (max-width: 768px) {
     .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 90%;
     }
+
     h1 {
-        flex: 100%;
+        font-size: 28px; /* Tamaño de fuente ajustado */
     }
-    button {
-        flex: 0 0 45%;
+
+    p {
+        font-size: 16px; /* Tamaño de fuente ajustado */
+    }
+
+    .carousel-text-container {
+        padding: 10px;
     }
 }
-
-/* Estilos adicionales para el modal */
-.modal-content.large {
-    max-width: 80%; /* Ancho máximo del modal */
-    font-size: 24px; /* Tamaño de fuente ajustado */
-}
-
-.modal-content.large p {
-    font-size: 28px; /* Tamaño de fuente para el mensaje */
-}
-
