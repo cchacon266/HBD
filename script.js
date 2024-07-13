@@ -1,5 +1,5 @@
 let currentImageIndex = 1;
-const totalImages = 7;
+const totalImages = 1;
 const imageElement = document.querySelector('.carousel-image');
 
 function showNextImage() {
