@@ -16,7 +16,7 @@ body {
     font-style: italic;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
@@ -40,13 +40,15 @@ body {
 }
 
 .container::before {
-    top: -30px;
-    left: -30px;
+    top: 1%;
+    left: -10px;
+    transform: translateY(-50%);
 }
 
 .container::after {
-    bottom: -30px;
-    right: -30px;
+    top: 98%;
+    right: -10px;
+    transform: translateY(-50%);
     animation-delay: 1.5s;
 }
 
@@ -111,5 +113,7 @@ p {
         padding: 10px;
         max-height: 80%; /* Ajuste para la altura máxima en móvil */
         width: 90%; /* Ajuste para el ancho máximo en móvil */
+        top: 40%; /* Ajuste para subir el cuadro */
+        transform: translate(-50%, -40%); /* Ajuste para centrar verticalmente el cuadro */
     }
 }
