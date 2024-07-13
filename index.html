@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&Y</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+            <img id="sorryImage" src="imagen/sorry.jpeg" alt="Lo siento" style="display: none; width: 100%; height: 400;">
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <img class="carousel-image" src="imagen/imagen1.jpeg" alt="Imagen 1">
+        <div class="carousel-text-container">
+            <div class="container">
+                <h1>Te extraño mucho...¿Quieres reconciliarte conmigo?</h1>
+                <button class="yes" onclick="showModal('❤️ te amo, te quiero hacer el amor y eres lo mejor de mi vida. ❤️', false)">Sí</button>
+                <button class="no" onclick="showModal('❤️ Respuesta invalida, intenta de nuevo ❤️', true)">No </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
