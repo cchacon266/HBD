@@ -10,5 +10,8 @@ function showNextImage() {
 setInterval(showNextImage, 3000);
 
 function playMusic() {
-    document.getElementById('backgroundMusic').play();
+    const audio = document.getElementById('backgroundMusic');
+    audio.play().catch(error => {
+        console.log('Autoplay was prevented:', error);
+    });
 }
