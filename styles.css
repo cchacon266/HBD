@@ -24,7 +24,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo semi-transparente */
     padding: 30px;
     border-radius: 10px;
     position: relative;
@@ -84,9 +84,12 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo semi-transparente */
     padding: 20px;
     border-radius: 10px;
+    max-height: 90%; /* Ajuste para la altura máxima */
+    overflow-y: auto; /* Habilitar desplazamiento si el contenido es demasiado alto */
+    width: 80%; /* Ajuste para el ancho máximo */
 }
 
 /* Media Query para ajustar el tamaño del modal y el diseño en dispositivos móviles */
@@ -106,5 +109,7 @@ p {
 
     .carousel-text-container {
         padding: 10px;
+        max-height: 80%; /* Ajuste para la altura máxima en móvil */
+        width: 90%; /* Ajuste para el ancho máximo en móvil */
     }
 }
